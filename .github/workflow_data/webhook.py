@@ -45,7 +45,7 @@ if __name__ == "__main__":
                         max_length_reached = True
                 is_building = "--nobuild" in commit['message']
 
-            desc+= f"\nNobuild flag active: {is_building}"
+            desc+= f"\n\n*Nobuild flag active: {is_building}*"
             url = event["compare"]
             color = 16723712 if event["forced"] else 3669797
 
