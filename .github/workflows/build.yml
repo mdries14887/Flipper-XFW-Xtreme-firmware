@@ -7,7 +7,9 @@ on:
       - "**.h"
       - "**.bin"
       - "**.inc"
+      - "**.fam"
       - "assets/**"
+      
 
     branches:
       - dev
