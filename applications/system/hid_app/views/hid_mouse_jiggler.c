@@ -90,7 +90,7 @@ static void hid_mouse_jiggler_timer_callback(void* context) {
                     hid_mouse_jiggler->hid,
                     mouse_move_x,
                     mouse_move_y);
-                //Random Interval between 10000ms and the chosen interval
+                //Random Interval between 1250ms and the chosen interval
                 int random_interval = (rand() % intervals[model->interval_idx]) + 1250;
                 furi_timer_stop(hid_mouse_jiggler->timer);
                 furi_timer_start(hid_mouse_jiggler->timer, random_interval);
